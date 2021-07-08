@@ -363,8 +363,6 @@ PatJetAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 
    Handle<std::vector<pat::Jet>> myjets;
    iEvent.getByLabel(jetInput, myjets);
-   Handle<reco::JetTagCollection> btags;
-   iEvent.getByLabel(InputTag("combinedSecondaryVertexBJetTags"), btags);
    Handle<double> rhoHandle;
    iEvent.getByLabel(InputTag("fixedGridRhoAll"), rhoHandle);
    Handle<reco::VertexCollection> vertices;

@@ -9,8 +9,8 @@ relBase = os.environ['CMSSW_BASE']
 
 #Work with data (if False, assumed MC simulations)
 #This needs to be in agreement with the input files/datasets below.
-isData = False
-doPat = True
+isData = True
+doPat = False
 
 process = cms.Process("POET")
 
